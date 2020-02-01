@@ -34,6 +34,14 @@ public class ScoreManager : MonoBehaviour
                     var a = t.Find("ScoreDisplay").GetComponent<Text>();
                     a.text = "" + score;
                     t.gameObject.SetActive(true);
+
+
+                    //delete players
+                    GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+                    for(int i = 0; i < players.Length; i++)
+                    {
+                        Destroy(players[i]);
+                    }
                 }
             }
         }
