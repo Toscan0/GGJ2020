@@ -125,4 +125,9 @@ public class PlayerMovement : MonoBehaviour
     {
         return shield;
     }
+
+    public void setShieldBool(bool newBool)
+    {
+        shield = newBool;
+    }
 }
