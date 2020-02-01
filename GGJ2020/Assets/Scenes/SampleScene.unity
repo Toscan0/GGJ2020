@@ -1824,6 +1824,7 @@ MonoBehaviour:
   rotation_speed: 0.5
   sfx: {fileID: 0}
   mat: {fileID: 2100000, guid: f03213e836b6d46eda1d4f0531452375, type: 2}
+  ShieldPrefab: {fileID: 2090830615}
 --- !u!65 &317089686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4909,6 +4910,12 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &410326786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5826226569961926370, guid: b749b216c13f64cae93b1869e2c628fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 117838747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433340490
 GameObject:
   m_ObjectHideFlags: 0
@@ -17437,6 +17444,7 @@ MonoBehaviour:
   rotation_speed: 0.5
   sfx: {fileID: 0}
   mat: {fileID: 2100000, guid: 27b0ab2aad200a44ab3f708d6d20a834, type: 2}
+  ShieldPrefab: {fileID: 410326786}
 --- !u!65 &1767631596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23884,6 +23892,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033964283}
   m_CullTransparentMesh: 0
+--- !u!1 &2090830615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4217482501821191764, guid: 5d980cf67d7bb4cfaa9e85773916dc84,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343252835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093895349
 GameObject:
   m_ObjectHideFlags: 0
