@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
+  minSpawnDelay: 0
   Cars:
   - {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
   - {fileID: 140570, guid: 9f14ffa559e6d214db9b0ec960921311, type: 3}
@@ -215,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
+  minSpawnDelay: 0
   Cars:
   - {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
   - {fileID: 160038, guid: 6346f9198ebfb674baa1a61f29dc6060, type: 3}
@@ -861,6 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
+  minSpawnDelay: 0
   Cars:
   - {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
   - {fileID: 160038, guid: f7cb15c5a7c4bdd498370bd90d1d77bd, type: 3}
@@ -10617,6 +10620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
+  minSpawnDelay: 0
   Cars:
   - {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
   - {fileID: 140570, guid: 9f14ffa559e6d214db9b0ec960921311, type: 3}
@@ -14060,6 +14064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Filho
       objectReference: {fileID: 0}
+    - target: {fileID: 1086687529099160, guid: b749b216c13f64cae93b1869e2c628fa, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4011955421222826, guid: b749b216c13f64cae93b1869e2c628fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16
@@ -14350,6 +14358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 5
+  minSpawnDelay: 0
   Cars:
   - {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
   - {fileID: 186458, guid: 2ea69a4739a41bc4086858745cb2f9e1, type: 3}
@@ -14563,6 +14572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 5
+  minSpawnDelay: 0
   Cars:
   - {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
   - {fileID: 186458, guid: 2ea69a4739a41bc4086858745cb2f9e1, type: 3}
@@ -17383,6 +17393,10 @@ PrefabInstance:
     - target: {fileID: 1758029990820006, guid: 5d980cf67d7bb4cfaa9e85773916dc84, type: 3}
       propertyPath: m_Name
       value: Pai
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758029990820006, guid: 5d980cf67d7bb4cfaa9e85773916dc84, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4611824741788480, guid: 5d980cf67d7bb4cfaa9e85773916dc84, type: 3}
       propertyPath: m_LocalPosition.x
