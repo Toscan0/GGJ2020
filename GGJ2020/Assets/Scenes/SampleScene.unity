@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ff9438dc25efa4cb63cc4c643e3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 6
+  spawnDelay: 1.5
   Cars:
   - {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
   - {fileID: 160038, guid: 6346f9198ebfb674baa1a61f29dc6060, type: 3}
@@ -444,7 +444,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17192
+  m_Name: pb_Mesh30814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6930,7 +6930,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17212
+  m_Name: pb_Mesh30834
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7222,7 +7222,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17056
+  m_Name: pb_Mesh30630
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7594,7 +7594,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17124
+  m_Name: pb_Mesh30728
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10864,7 +10864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ff9438dc25efa4cb63cc4c643e3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 6
+  spawnDelay: 1.5
   Cars:
   - {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
   - {fileID: 140570, guid: 9f14ffa559e6d214db9b0ec960921311, type: 3}
@@ -14203,7 +14203,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17044
+  m_Name: pb_Mesh30618
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14403,7 +14403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ff9438dc25efa4cb63cc4c643e3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 5
+  spawnDelay: 3.5
   Cars:
   - {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
   - {fileID: 186458, guid: 2ea69a4739a41bc4086858745cb2f9e1, type: 3}
@@ -14416,7 +14416,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17094
+  m_Name: pb_Mesh30680
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
