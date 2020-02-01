@@ -33,6 +33,8 @@ public class CarGarageSpawner : MonoBehaviour
                 garage.GetComponent<GaragemManager>().car = Instantiate(car, garage.transform.position, Quaternion.AngleAxis(90, new Vector3(0, 1, 0)));
             }
             garage.GetComponent<GaragemManager>().hasCar = true;
+            garage.GetComponent<GaragemManager>().EnableIcon();
+            garage.GetComponent<GaragemManager>().StartTimer();
         }
 
         
