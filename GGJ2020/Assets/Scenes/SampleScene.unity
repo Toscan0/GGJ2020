@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44301072, g: 0.49220413, b: 0.5719328, a: 1}
+  m_IndirectSpecularColor: {r: 0.44301015, g: 0.49220318, b: 0.5719317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -571,7 +571,7 @@ MonoBehaviour:
   barracas: []
   car: {fileID: 116448, guid: 039320a8f4b60c445acfae631ac0214f, type: 3}
   specialCar: {fileID: 193646, guid: 19c00265a4f7b43489bdceefa77c2092, type: 3}
-  ferramenta: {fileID: 5235792965192958040, guid: d51581cfe16991f4d84580834ab65d47,
+  ferramenta: {fileID: 187384300925106500, guid: bcd1882f28a352b4aaf4cf8554079395,
     type: 3}
 --- !u!4 &118522395
 Transform:
@@ -5237,7 +5237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFerramenta: 0
   ferramenta: {fileID: 0}
 --- !u!1 &471360849
 GameObject:
@@ -12263,7 +12262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFerramenta: 0
   ferramenta: {fileID: 0}
 --- !u!1 &1046828954
 GameObject:
@@ -13222,7 +13220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFerramenta: 0
   ferramenta: {fileID: 0}
 --- !u!1 &1324519031
 GameObject:
@@ -13330,7 +13327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFerramenta: 0
   ferramenta: {fileID: 0}
 --- !u!1 &1339883711
 GameObject:
