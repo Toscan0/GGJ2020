@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2372900085267129316}
   - component: {fileID: 1496980545502587716}
   - component: {fileID: 3610861345977781903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car_2_Purple
   m_TagString: Car
   m_Icon: {fileID: 0}

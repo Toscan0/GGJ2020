@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 7677568633384152735}
   - component: {fileID: 8488616978184652493}
   - component: {fileID: 7161709629854282422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bus_Yellow
   m_TagString: Car
   m_Icon: {fileID: 0}

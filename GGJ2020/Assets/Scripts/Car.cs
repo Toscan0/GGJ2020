@@ -46,11 +46,11 @@ public class Car : MonoBehaviour
             //put player in inicial pos
             if(obj.name == "Filho")
             {
-                obj.transform.localPosition = new Vector3(-16.56f, 3.24f, -12.77f);
+                obj.transform.localPosition = new Vector3(-16.56f, -0.55f, -12.63f);
             }
             if (obj.name == "Pai")
             {
-                obj.transform.localPosition = new Vector3(-13.204f, 3.251f, -12.681f);
+                obj.transform.localPosition = new Vector3(-13.204f, -0.55f, -12.63f);
             }
 
             PlayerMovement player = obj.GetComponent<PlayerMovement>();
