@@ -37,6 +37,13 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate(-direction);
                 break;
             case "Barraca":
+                float flickerTimeout = 3; //flicker for 3 seconds when hit
+
+
+                //In Update() somewhere
+                flickerTimeout -= Time.deltaTime;
+                GetComponent<Flicker>().animate = flickerTimeout > 0;
+
                 Destroy(collision.gameObject);
                 break;
             case "Car":

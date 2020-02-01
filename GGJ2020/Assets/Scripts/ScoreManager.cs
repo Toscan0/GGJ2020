@@ -9,14 +9,23 @@ public class ScoreManager : MonoBehaviour
     public static void LostLife()
     {
         GameObject lifeCanvas = GameObject.Find("Canvas/Life" + totalLifes);
-        lifeCanvas.SetActive(false);
-        totalLifes--;
-        Debug.Log(totalLifes);
-        if(totalLifes == 0)
+        if(lifeCanvas != null)
         {
-            /*
-             *  Call Game Over
-             */
+            lifeCanvas.SetActive(false);
+        }
+
+        totalLifes--;
+
+        if (totalLifes == 0)
+        {
+            Transform[] trans = GameObject.Find("UI").GetComponentsInChildren<Transform>(true);
+            foreach (Transform t in trans)
+            {
+                if (t.gameObject.name == "GameOver")
+                {
+                    t.gameObject.SetActive(true);
+                }
+            }
         }
     }
 }

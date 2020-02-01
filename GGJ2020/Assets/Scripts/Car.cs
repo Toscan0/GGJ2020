@@ -40,10 +40,21 @@ public class Car : MonoBehaviour
         if (obj.gameObject.tag == "Player")
         {
             //lost life
-            ScoreManager gameManager = GameObject.Find("GameManager").GetComponent<ScoreManager>(); ;
+            ScoreManager gameManager = GameObject.Find("GameManager").GetComponent<ScoreManager>(); 
             ScoreManager.LostLife();
 
             //put player in inicial pos
+            if(obj.name == "Filho")
+            {
+                obj.transform.localPosition = new Vector3(-16.56f, 3.24f, -12.77f);
+            }
+            if (obj.name == "Pai")
+            {
+                obj.transform.localPosition = new Vector3(-13.204f, 3.251f, -12.681f);
+            }
+
+            PlayerMovement player = obj.GetComponent<PlayerMovement>();
+            //PlayerMovement.piscaPisca()
 
         }
     }
