@@ -7,12 +7,14 @@ public class BarracaManager : MonoBehaviour
     public GameObject PowerUp = null;
 
 
-    /*void OnCollisionEnter(Collision col)
+    void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "player")
+        if (col.gameObject.tag == "Player")
         {
+            col.gameObject.GetComponent<PlayerMovement>().powerUp(PowerUp);
             Destroy(PowerUp);
+            PowerUp = null;
         }
-    }*/
+    }
 }
 

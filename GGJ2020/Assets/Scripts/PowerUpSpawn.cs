@@ -23,9 +23,9 @@ public class PowerUpSpawn : MonoBehaviour
         if (barraca.GetComponent<BarracaManager>().PowerUp == null) {
             GameObject powerUp = powerUps[Random.Range(0, 2)];
             GameObject spawn = Instantiate(powerUp);
-            Debug.Log("Spawn");
+            spawn.name = powerUp.name;
             spawn.transform.position = new Vector3(barraca.transform.position.x, barraca.transform.position.y + 1, barraca.transform.position.z);
-            barraca.GetComponent<BarracaManager>().PowerUp = powerUp;
+            barraca.GetComponent<BarracaManager>().PowerUp = spawn;
         }
         
     }
