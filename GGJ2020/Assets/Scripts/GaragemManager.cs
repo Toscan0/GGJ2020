@@ -7,8 +7,10 @@ public class GaragemManager : MonoBehaviour
 
     public bool hasCar = false;
     public GameObject car;
+    public GameObject specialCar;
     public Canvas canva;
     public ProgressBarCircle pbc;
+    public GameObject barraca;
 
     private void Start()
     {
@@ -24,6 +26,11 @@ public class GaragemManager : MonoBehaviour
             canva.enabled = false;
             Destroy(car);
             hasCar = false;
+            if (barraca != null)
+            {
+                barraca.GetComponent<BarracaManager>().destroy();
+                barraca = null;
+            }
         }
     }
 
