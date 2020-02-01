@@ -25,6 +25,16 @@ public class PlayerMovement : MonoBehaviour
         var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 50, 0,
             Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 50);
         transform.Translate(movement);
+        if ((movement.z > 0 && movement.x > 0) || (movement.z < 0 && movement.x > 0))
+        {
+            transform.Rotate(Vector3.up, 1);
+
+        }
+        if ((movement.z > 0 && movement.x < 0) || (movement.z < 0 && movement.x < 0))
+        {
+            transform.Rotate(Vector3.up, -1);
+
+        }
         animator.SetBool("Running", movement.magnitude > 0);
     }
 
