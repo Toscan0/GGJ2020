@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44301072, g: 0.49220413, b: 0.5719328, a: 1}
+  m_IndirectSpecularColor: {r: 0.44301015, g: 0.49220318, b: 0.5719317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -376,7 +376,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17192
+  m_Name: pb_Mesh14360
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1311,9 +1311,9 @@ GameObject:
   m_Component:
   - component: {fileID: 527805794}
   - component: {fileID: 527805793}
+  - component: {fileID: 527805795}
   - component: {fileID: 527805792}
   - component: {fileID: 527805791}
-  - component: {fileID: 527805790}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -1321,20 +1321,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &527805790
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527805789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1607704680}
 --- !u!114 &527805791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4069,6 +4055,20 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &527805795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527805789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!1 &559531838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,9 +4079,9 @@ GameObject:
   m_Component:
   - component: {fileID: 559531843}
   - component: {fileID: 559531842}
+  - component: {fileID: 559531844}
   - component: {fileID: 559531841}
   - component: {fileID: 559531840}
-  - component: {fileID: 559531839}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4089,20 +4089,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &559531839
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559531838}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 930443310}
 --- !u!114 &559531840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6837,13 +6823,27 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &559531844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559531838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!43 &650916845
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17212
+  m_Name: pb_Mesh14380
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7135,7 +7135,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17056
+  m_Name: pb_Mesh14178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7507,7 +7507,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17124
+  m_Name: pb_Mesh14276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7674,9 +7674,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1016422020}
   - component: {fileID: 1016422019}
+  - component: {fileID: 1016422021}
   - component: {fileID: 1016422018}
   - component: {fileID: 1016422017}
-  - component: {fileID: 1016422016}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7684,20 +7684,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &1016422016
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016422015}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1623168426}
 --- !u!114 &1016422017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10432,6 +10418,20 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1016422021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016422015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!1 &1033775100
 GameObject:
   m_ObjectHideFlags: 0
@@ -10774,9 +10774,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1114927092}
   - component: {fileID: 1114927091}
+  - component: {fileID: 1114927093}
   - component: {fileID: 1114927090}
   - component: {fileID: 1114927089}
-  - component: {fileID: 1114927088}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -10784,20 +10784,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &1114927088
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114927087}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 979393824}
 --- !u!114 &1114927089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13532,6 +13518,20 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1114927093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114927087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!1 &1146376236
 GameObject:
   m_ObjectHideFlags: 0
@@ -14127,7 +14127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17044
+  m_Name: pb_Mesh14166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14337,7 +14337,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17094
+  m_Name: pb_Mesh14228
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14504,9 +14504,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1723895653}
   - component: {fileID: 1723895652}
+  - component: {fileID: 1723895654}
   - component: {fileID: 1723895651}
   - component: {fileID: 1723895650}
-  - component: {fileID: 1723895649}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -14514,20 +14514,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &1723895649
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723895648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 60498734}
 --- !u!114 &1723895650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17262,6 +17248,20 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723895654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723895648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!1 &1779413083
 GameObject:
   m_ObjectHideFlags: 0
@@ -17338,9 +17338,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1924879590}
   - component: {fileID: 1924879589}
+  - component: {fileID: 1924879591}
   - component: {fileID: 1924879588}
   - component: {fileID: 1924879587}
-  - component: {fileID: 1924879586}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -17348,20 +17348,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!64 &1924879586
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924879585}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 650916845}
 --- !u!114 &1924879587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20096,6 +20082,20 @@ Transform:
   m_Father: {fileID: 1865580246}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1924879591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924879585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5674cf487743fee4f8b2ebd7dfbdd715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasCar: 0
+  car: {fileID: 0}
 --- !u!1 &2033964283
 GameObject:
   m_ObjectHideFlags: 0
