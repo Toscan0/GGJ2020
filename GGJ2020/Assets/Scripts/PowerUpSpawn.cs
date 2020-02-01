@@ -8,24 +8,24 @@ public class PowerUpSpawn : MonoBehaviour
 
     //public GameObject powerUp;
     public List<GameObject> powerUps = new List<GameObject>();
-    public GameObject[] barracas;
+    public GameObject[] spawnPoints;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnPowerUps", 0, 1);
+        InvokeRepeating("SpawnPowerUps", 5, Random.Range(5, 15));
     }
 
     void SpawnPowerUps() {
-        GameObject barraca = barracas[Random.Range(0, 4)];
-        if (barraca.GetComponent<BarracaManager>().PowerUp == null) {
+        GameObject spawnPoint = spawnPoints[Random.Range(0, 4)];
+        if (spawnPoint.GetComponent<SpawnPointManager>().PowerUp == null) {
             GameObject powerUp = powerUps[Random.Range(0, 2)];
             GameObject spawn = Instantiate(powerUp);
             spawn.name = powerUp.name;
-            spawn.transform.position = new Vector3(barraca.transform.position.x, barraca.transform.position.y + 1, barraca.transform.position.z);
-            barraca.GetComponent<BarracaManager>().PowerUp = spawn;
+            spawn.transform.position = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z);
+            spawnPoint.GetComponent<SpawnPointManager>().PowerUp = spawn;
         }
         
     }
