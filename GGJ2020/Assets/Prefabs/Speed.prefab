@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 191050160247671454}
   - component: {fileID: 5880072120483182183}
   m_Layer: 0
-  m_Name: Red Bull
+  m_Name: Speed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

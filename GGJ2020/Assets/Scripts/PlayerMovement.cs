@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Timers;
 using UnityEngine;
 
@@ -11,19 +9,19 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     public float rotation_speed = 1.5f;
-    private bool shield = false;
 
-    public Material mat;
+    private bool shield = false;
     private int speedModifier = 1;
 
-    float startingTime = 0;
-    bool isStarted = false;
-    bool hasBlinked = false;
+    public AudioSource sfx;
 
+    public Material mat;
 
     // Start is called before the first frame update
     void Start()
     {
+        Random.InitState(12345);
+
         animator = GetComponent<Animator>();
 
         //pu material as default
@@ -52,10 +50,21 @@ public class PlayerMovement : MonoBehaviour
             case "Player":
                 animator.SetBool("Fighting", true); 
                 transform.forward = (collision.transform.position - transform.position);
+                AudioManager.PlaySound("Punch", transform.position);
                 //Vector3 direction = (collision.transform.position - transform.position).normalized;
                 //transform.Translate(-direction);
                 break;
+            default:
+                break;
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
             case "Car":
+                AudioManager.PlaySound("Hit" + (playerId > 1 ? "" + playerId : ""), transform.position);
                 break;
             default:
                 break;
@@ -76,21 +85,20 @@ public class PlayerMovement : MonoBehaviour
                 timer = (o, args) => {
                     shield = false;
                 };
-                aTimer.Elapsed += timer;
-                aTimer.Enabled = true;
                 break;
             case "Speed":
                 speedModifier = 2;
                 timer = (o, args) => {
                     speedModifier = 1;
                 };
-                aTimer.Elapsed += timer;
-                aTimer.Enabled = true;
                 break;
             default:
                 Debug.Log("Unknown Powerup");
-                break;
+                return;
         }
+        aTimer.Elapsed += timer;
+        aTimer.Enabled = true;
+        AudioManager.PlaySound(powerUp.name + "Power", transform.position);
 
     }
 
