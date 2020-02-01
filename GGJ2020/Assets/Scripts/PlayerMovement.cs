@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource sfx;
 
-    public Material mat;
+    public Material[] mat;
 
     public GameObject ShieldPrefab;
 
@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Running", movement.magnitude > 0 ? true : false);
 
         }
+
+        ShieldPrefab.SetActive(shield);
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -84,17 +86,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Shield":
                 shield = true;
-                if(shield == true)
-                {
-                    ShieldPrefab.SetActive(true);
-                }
-               
-
                 timer = (o, args) => {
-                    Debug.Log("Outttt");
-
-                    ShieldPrefab.SetActive(false);
-
                     shield = false;
                 };
                 break;
