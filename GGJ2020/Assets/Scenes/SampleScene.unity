@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44301072, g: 0.49220413, b: 0.5719328, a: 1}
+  m_IndirectSpecularColor: {r: 0.44301015, g: 0.49220318, b: 0.5719317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 467581585}
   - component: {fileID: 467581584}
   - component: {fileID: 467581583}
+  - component: {fileID: 467581586}
   m_Layer: 0
   m_Name: Barraca
   m_TagString: Untagged
@@ -903,6 +904,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467581581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &467581586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467581581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2d3a42ad7139408afac676276e767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 5235792965192958040, guid: 30d87304709495d46a35518927926401, type: 3}
 --- !u!1 &681690512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1141,7 @@ GameObject:
   - component: {fileID: 1033775104}
   - component: {fileID: 1033775103}
   - component: {fileID: 1033775102}
+  - component: {fileID: 1033775105}
   m_Layer: 0
   m_Name: Barraca
   m_TagString: Untagged
@@ -1208,6 +1223,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033775100}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1033775105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033775100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2d3a42ad7139408afac676276e767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 5235792965192958040, guid: 30d87304709495d46a35518927926401, type: 3}
 --- !u!1 &1065473630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,6 +1749,7 @@ GameObject:
   - component: {fileID: 1310889036}
   - component: {fileID: 1310889035}
   - component: {fileID: 1310889034}
+  - component: {fileID: 1310889037}
   m_Layer: 0
   m_Name: Barraca
   m_TagString: Untagged
@@ -1802,6 +1831,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310889032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1310889037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310889032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2d3a42ad7139408afac676276e767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 5235792965192958040, guid: 30d87304709495d46a35518927926401, type: 3}
 --- !u!1 &1324519031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1856,7 @@ GameObject:
   - component: {fileID: 1324519035}
   - component: {fileID: 1324519034}
   - component: {fileID: 1324519033}
+  - component: {fileID: 1324519036}
   m_Layer: 0
   m_Name: Barraca
   m_TagString: Untagged
@@ -1895,6 +1938,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324519031}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1324519036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324519031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2d3a42ad7139408afac676276e767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 5235792965192958040, guid: 30d87304709495d46a35518927926401, type: 3}
 --- !u!1 &1339883711
 GameObject:
   m_ObjectHideFlags: 0
