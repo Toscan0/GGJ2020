@@ -597,11 +597,7 @@ MonoBehaviour:
   powerUps:
   - {fileID: 5235792965192958040, guid: 30d87304709495d46a35518927926401, type: 3}
   - {fileID: 5235792965192958040, guid: 4c204d70255cb59448d388f84c56519c, type: 3}
-  barracas:
-  - {fileID: 467581581}
-  - {fileID: 1033775100}
-  - {fileID: 1324519031}
-  - {fileID: 1310889032}
+  spawnPoints: []
 --- !u!114 &118522397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5128,7 +5124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUp: {fileID: 0}
 --- !u!43 &546473452
 Mesh:
   m_ObjectHideFlags: 0
@@ -11816,7 +11811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUp: {fileID: 0}
 --- !u!1 &1046828954
 GameObject:
   m_ObjectHideFlags: 0
@@ -12774,7 +12768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUp: {fileID: 0}
 --- !u!1 &1324519031
 GameObject:
   m_ObjectHideFlags: 0
@@ -12881,7 +12874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUp: {fileID: 0}
 --- !u!1 &1339883711
 GameObject:
   m_ObjectHideFlags: 0
@@ -23132,7 +23124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2099209843
 RectTransform:
   m_ObjectHideFlags: 0
