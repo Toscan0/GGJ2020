@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,8 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     public float rotation_speed = 1.5f;
+    private bool shield = false;
 
     public Material mat;
+    private int speedModifier = 1;
 
     float startingTime = 0;
     bool isStarted = false;
@@ -50,14 +53,43 @@ public class PlayerMovement : MonoBehaviour
                 //Vector3 direction = (collision.transform.position - transform.position).normalized;
                 //transform.Translate(-direction);
                 break;
-            case "Barraca":
-                Destroy(collision.gameObject);
-                break;
             case "Car":
                 break;
             default:
                 break;
         }
+    }
+
+    public void powerUp(GameObject powerUp) {
+
+        // Create a timer with a two second interval.
+        System.Timers.Timer aTimer = new System.Timers.Timer(10000);
+        // Hook up the Elapsed event for the timer.
+        aTimer.AutoReset = true;
+        ElapsedEventHandler timer;
+        switch (powerUp.name)
+        {
+            case "Shield":
+                shield = true;
+                timer = (o, args) => {
+                    shield = false;
+                };
+                aTimer.Elapsed += timer;
+                aTimer.Enabled = true;
+                break;
+            case "Speed":
+                speedModifier = 2;
+                timer = (o, args) => {
+                    speedModifier = 1;
+                };
+                aTimer.Elapsed += timer;
+                aTimer.Enabled = true;
+                break;
+            default:
+                Debug.Log("Unknown Powerup");
+                break;
+        }
+
     }
 
     public IEnumerator DoBlinks(float duration, float blinkTime)
