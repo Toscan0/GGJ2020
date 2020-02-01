@@ -82,6 +82,11 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Shield":
                 shield = true;
+                if(shield == true)
+                {
+                    //GameObject child = gameObject.transform.GetChild(0).gameObject;
+
+                }
                 timer = (o, args) => {
                     shield = false;
                 };

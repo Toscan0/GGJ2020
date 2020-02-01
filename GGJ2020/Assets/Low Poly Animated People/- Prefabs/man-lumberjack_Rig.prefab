@@ -2302,6 +2302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shield
       objectReference: {fileID: 0}
+    - target: {fileID: 5773372447296968404, guid: ba84b86c13d2dd64a86af93bbff9a986,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7369149572318176455, guid: ba84b86c13d2dd64a86af93bbff9a986,
         type: 3}
       propertyPath: m_LocalPosition.x
