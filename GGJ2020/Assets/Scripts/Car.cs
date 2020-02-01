@@ -39,22 +39,29 @@ public class Car : MonoBehaviour
     {
         if (obj.gameObject.tag == "Player")
         {
-            //lost life
-            ScoreManager gameManager = GameObject.Find("GameManager").GetComponent<ScoreManager>(); 
-            ScoreManager.LostLife();
-
-            //put player in inicial pos
-            if(obj.name == "Filho")
-            {
-                obj.transform.localPosition = new Vector3(-16.56f, -0.55f, -12.63f);
-            }
-            if (obj.name == "Pai")
-            {
-                obj.transform.localPosition = new Vector3(-13.204f, -0.55f, -12.63f);
-            }
-
             PlayerMovement player = obj.GetComponent<PlayerMovement>();
-            StartCoroutine(player.DoBlinks(2f, 0.2f));
+
+            if (player.getShieldBool() == false)
+            {
+                player.setShieldBool(true);
+                //lost life
+                ScoreManager gameManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
+                ScoreManager.LostLife();
+
+                //put player in inicial pos
+                if (obj.name == "Filho")
+                {
+                    obj.transform.localPosition = new Vector3(-16.56f, -0.55f, -13.74f);
+                }
+                if (obj.name == "Pai")
+                {
+                    obj.transform.localPosition = new Vector3(-12.1f, -0.55f, -13.75f);
+                }
+
+
+                StartCoroutine(player.DoBlinks(2f, 0.2f));
+            }
+            
         }
     }
 }

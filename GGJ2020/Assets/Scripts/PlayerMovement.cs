@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     float startingTime = 0;
     bool isStarted = false;
     bool hasBlinked = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,6 +118,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
+        shield = false;
     }
 
+    public bool getShieldBool()
+    {
+        return shield;
+    }
+
+    public void setShieldBool(bool newBool)
+    {
+        shield = newBool;
+    }
 }
