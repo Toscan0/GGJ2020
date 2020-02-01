@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(Input.GetAxis("Horizontal" + playerId) / 50, 0, Input.GetAxis("Vertical" + playerId) / 50));        
+        transform.Translate(new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 50, 0, Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 50));        
     }
 
     public void OnCollisionEnter(Collision collision)
