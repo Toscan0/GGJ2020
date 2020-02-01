@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,8 +27,7 @@ public class PlayerMovement : MonoBehaviour
             var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")), 0,
                   Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")));
 
-            if (movement.magnitude != 0)
-                transform.forward = movement;
+            transform.forward = movement;
             transform.Translate(movement / 50,Space.World);
             animator.SetBool("Running", movement.magnitude > 0 ? true : false);
 
@@ -45,13 +45,6 @@ public class PlayerMovement : MonoBehaviour
                 //transform.Translate(-direction);
                 break;
             case "Barraca":
-                float flickerTimeout = 3; //flicker for 3 seconds when hit
-
-
-                //In Update() somewhere
-                flickerTimeout -= Time.deltaTime;
-                GetComponent<Flicker>().animate = flickerTimeout > 0;
-
                 Destroy(collision.gameObject);
                 break;
             case "Car":
