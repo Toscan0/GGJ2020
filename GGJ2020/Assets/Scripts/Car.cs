@@ -54,8 +54,7 @@ public class Car : MonoBehaviour
             }
 
             PlayerMovement player = obj.GetComponent<PlayerMovement>();
-            //PlayerMovement.piscaPisca()
-
+            StartCoroutine(player.DoBlinks(2f, 0.2f));
         }
     }
 }
