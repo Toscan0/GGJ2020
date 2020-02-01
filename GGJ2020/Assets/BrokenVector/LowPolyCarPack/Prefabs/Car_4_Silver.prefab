@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: -8044080579965004573}
   - component: {fileID: -5221328933030168237}
   - component: {fileID: -421103728663130039}
+  - component: {fileID: 2748283626202596779}
   m_Layer: 0
   m_Name: Car_4_Silver
   m_TagString: Car
@@ -291,6 +292,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: -8044080579965004573}
   speed: 2.5
+  carCollider: {fileID: -5221328933030168237}
+--- !u!65 &2748283626202596779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03850384, y: 0.02008486, z: 0.015360808}
+  m_Center: {x: -0.00068484066, y: 0.00016216874, z: 0.00037925004}
 --- !u!1 &168118
 GameObject:
   m_ObjectHideFlags: 0
