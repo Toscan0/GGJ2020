@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float rotation_speed = 1.5f;
 
     private bool shield = false;
+    private bool shieldshield = false;
+
     private int speedModifier = 1;
 
     public AudioSource sfx;
@@ -44,7 +46,14 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        ShieldPrefab.SetActive(shield);
+        if (shieldshield == true)
+        {
+            ShieldPrefab.SetActive(true);
+        }
+        else
+        {
+            ShieldPrefab.SetActive(false);
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -86,8 +95,10 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Shield":
                 shield = true;
+                shieldshield = true;
                 timer = (o, args) => {
                     shield = false;
+                    shieldshield = false;
                 };
                 break;
             case "Speed":
