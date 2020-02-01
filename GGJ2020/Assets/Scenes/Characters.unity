@@ -10646,7 +10646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 2
   animator: {fileID: 0}
-  rotation_speed: 0.5
+  rotation_speed: 1.5
 --- !u!65 &1099236395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13670,7 +13670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 1
   animator: {fileID: 0}
-  rotation_speed: 0.5
+  rotation_speed: 1.5
 --- !u!65 &1229129755
 BoxCollider:
   m_ObjectHideFlags: 0
