@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarracaManager : MonoBehaviour
+public class SpawnPointManager : MonoBehaviour
 {
-    /*public GameObject PowerUp = null;
+    public GameObject PowerUp = null;
 
-
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -15,6 +14,5 @@ public class BarracaManager : MonoBehaviour
             Destroy(PowerUp);
             PowerUp = null;
         }
-    }*/
+    }
 }
-
