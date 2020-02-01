@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 485172}
   - component: {fileID: 3312322}
   - component: {fileID: 2319746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Car_1_Red
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 429422}
   - component: {fileID: 3309104}
   - component: {fileID: 2308310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheel1-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 481162}
   - component: {fileID: 3367302}
   - component: {fileID: 2310866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheel1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 419122}
   - component: {fileID: 3397462}
   - component: {fileID: 2309806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheel1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 412164}
   - component: {fileID: 3321322}
   - component: {fileID: 2360670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheel1-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
