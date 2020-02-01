@@ -12,7 +12,7 @@ public class GaragemManager : MonoBehaviour
 
     private void Start()
     {
-        canva.enabled = false;
+        canva.gameObject.SetActive(false);
 
     }
 
@@ -21,7 +21,7 @@ public class GaragemManager : MonoBehaviour
         this.pbc.BarValue = this.pbc.BarValue - Time.deltaTime * 20;
         if(pbc.BarValue <= 0)
         {
-            canva.enabled = false;
+            canva.gameObject.SetActive(false);
             Destroy(car);
             hasCar = false;
         }
@@ -29,7 +29,7 @@ public class GaragemManager : MonoBehaviour
 
     public void EnableIcon()
     {
-        canva.enabled = true;
+        canva.gameObject.SetActive(true);
     }
     public void StartTimer()
     {
