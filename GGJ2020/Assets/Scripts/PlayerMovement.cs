@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource sfx;
 
-    public Material mat;
+    public Material[] mat;
+
+    public GameObject ShieldPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Running", movement.magnitude > 0 ? true : false);
 
         }
+
+        ShieldPrefab.SetActive(shield);
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -72,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void powerUp(GameObject powerUp) {
-
+        
         // Create a timer with a two second interval.
         System.Timers.Timer aTimer = new System.Timers.Timer(10000);
         // Hook up the Elapsed event for the timer.
