@@ -580,6 +580,7 @@ GameObject:
   - component: {fileID: 3046019720056808973}
   - component: {fileID: -5254351345063477921}
   - component: {fileID: 273591262048735044}
+  - component: {fileID: -7044885619892014426}
   m_Layer: 8
   m_Name: Truck_1_Red
   m_TagString: Car
@@ -673,6 +674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: -5254351345063477921}
   speed: 2
+  carCollider: {fileID: 273591262048735044}
 --- !u!54 &-5254351345063477921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -698,6 +700,19 @@ BoxCollider:
   m_GameObject: {fileID: 154144}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07644306, y: 0.035457246, z: 0.02344646}
+  m_Center: {x: -0.0019750928, y: 4.2506713e-19, z: 0.00021971941}
+--- !u!65 &-7044885619892014426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.07644306, y: 0.035457246, z: 0.02344646}

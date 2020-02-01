@@ -6,8 +6,9 @@ public class CarSpawner : MonoBehaviour
 {
 
     public float spawnDelay = .3f;
+    public float minSpawnDelay;
 
-    public GameObject car;
+    public GameObject[] Cars;
 
     public Transform[] spawnPoints;
 
@@ -18,7 +19,12 @@ public class CarSpawner : MonoBehaviour
         if (nextTimeToSpawn <= Time.time)
         {
             SpawnCar();
-            nextTimeToSpawn = Time.time + spawnDelay;
+            nextTimeToSpawn = Time.time + spawnDelay * Random.Range(1, 3);
+
+            if(nextTimeToSpawn < minSpawnDelay)
+            {
+                nextTimeToSpawn = minSpawnDelay;
+            }
         }
     }
 
@@ -26,6 +32,9 @@ public class CarSpawner : MonoBehaviour
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[randomIndex];
+
+        randomIndex = Random.Range(0, Cars.Length);
+        GameObject car = Cars[randomIndex];
 
         car.transform.localScale = new Vector3(58f, 58f, 58f);
         Instantiate(car, spawnPoint.position, spawnPoint.rotation);
