@@ -20,7 +20,8 @@ public class Car : MonoBehaviour
         for (int i = 0; i < players.Length; i++)
         {
             Debug.Log(players[i].name);
-            Physics.IgnoreCollision(players[i].GetComponent<Collider>(), this.GetComponent<Collider>());
+            Physics.IgnoreCollision(players[i].GetComponent<BoxCollider>(), 
+                this.GetComponent<Collider>());
         }
     }
 
