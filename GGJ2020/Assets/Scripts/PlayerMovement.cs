@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotation_speed = 0.5f;
     public static float MAX_SPEED = 1.5f;
 
+    public Material mat;
 
     // Start is called before the first frame update
     void Start()
@@ -37,13 +38,8 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate(-direction);
                 break;
             case "Barraca":
-                float flickerTimeout = 3; //flicker for 3 seconds when hit
 
-
-                //In Update() somewhere
-                flickerTimeout -= Time.deltaTime;
-                GetComponent<Flicker>().animate = flickerTimeout > 0;
-
+                StartCoroutine(TakeDamage(0.5f));
                 Destroy(collision.gameObject);
                 break;
             case "Car":
@@ -51,5 +47,14 @@ public class PlayerMovement : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    IEnumerator TakeDamage(float seconds)
+    {
+        mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 0f));
+
+        yield return new WaitForSeconds(seconds);
+        //after x seconds, the player can get hit again
+        mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
     }
 }
