@@ -96,14 +96,11 @@ public class PlayerMovement : MonoBehaviour
     {
         bool transparente = false;
         float currentTime = 0f;
+
         while (currentTime < duration)
         {
             currentTime += blinkTime;
 
-            Debug.Log("Duration " + duration);
-            Debug.Log("delta time " + Time.time);
-
-            //toggle renderer
             if (transparente == false)
             {
                 mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 0f));
@@ -118,7 +115,6 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(blinkTime);
         }
 
-        //make sure renderer is enabled when we exit
         mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
     }
 
