@@ -13,11 +13,16 @@ public class PlayerMovement : MonoBehaviour
 
     public Material mat;
 
+    float startingTime = 0;
+    bool isStarted = false;
+    bool hasBlinked = false;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
 
+        //pu material as default
+        mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
     }
 
     // Update is called once per frame
@@ -31,15 +36,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        switch(collision.gameObject.tag)
+        switch (collision.gameObject.tag)
         {
             case "Player":
                 Vector3 direction = (collision.transform.position - transform.position).normalized;
                 transform.Translate(-direction);
                 break;
             case "Barraca":
-
-                StartCoroutine(TakeDamage(0.5f));
                 Destroy(collision.gameObject);
                 break;
             case "Car":
@@ -49,12 +52,34 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    IEnumerator TakeDamage(float seconds)
+    public IEnumerator DoBlinks(float duration, float blinkTime)
     {
-        mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 0f));
+        bool transparente = false;
+        float currentTime = 0f;
+        while (currentTime < duration)
+        {
+            currentTime += blinkTime;
 
-        yield return new WaitForSeconds(seconds);
-        //after x seconds, the player can get hit again
+            Debug.Log("Duration " + duration);
+            Debug.Log("delta time " + Time.time);
+
+            //toggle renderer
+            if (transparente == false)
+            {
+                mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 0f));
+            }
+            else
+            {
+                mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
+            }
+            transparente = !transparente;
+
+            //wait for a bit
+            yield return new WaitForSeconds(blinkTime);
+        }
+
+        //make sure renderer is enabled when we exit
         mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
     }
+
 }
