@@ -8,8 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public int playerId = 1;
 
     public Animator animator;
-    public float rotation_speed = 0.5f;
-    public static float MAX_SPEED = 1.5f;
+    public float rotationSpeed = 0.2f;
 
 
     // Start is called before the first frame update
@@ -24,7 +23,9 @@ public class PlayerMovement : MonoBehaviour
     {
         var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 50, 0,
             Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 50);
-        transform.Translate(movement);
+        transform.Translate(movement); 
+        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) * rotationSpeed);
+
         animator.SetBool("Running", movement.magnitude > 0);
     }
 
