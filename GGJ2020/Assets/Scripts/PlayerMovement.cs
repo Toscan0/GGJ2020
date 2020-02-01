@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource sfx;
 
-    public Material[] mat;
+    public Material mat;
 
     public GameObject ShieldPrefab;
 
