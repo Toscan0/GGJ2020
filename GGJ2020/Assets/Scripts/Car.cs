@@ -16,9 +16,11 @@ public class Car : MonoBehaviour
     {
         //speed = Random.Range(minSpeed, maxSpeed);
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log(players.Length);
         for (int i = 0; i < players.Length; i++)
         {
-            Physics.IgnoreCollision(players[i].gameObject.GetComponent<Collider>(), this.GetComponent<Collider>());
+            Debug.Log(players[i].name);
+            Physics.IgnoreCollision(players[i].GetComponent<Collider>(), this.GetComponent<Collider>());
         }
     }
 
