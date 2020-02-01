@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class BarracaManager : MonoBehaviour
 {
-    public bool hasFerramenta = false;
     public GameObject ferramenta;
 
     public void destroy()
     {
         Destroy(ferramenta);
-        hasFerramenta = false;
     }
 
     public void Init()
@@ -19,19 +17,29 @@ public class BarracaManager : MonoBehaviour
         //spawn.name = powerUp.name;
         nova_ferramenta.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
         //spawnPoint.GetComponent<SpawnPointManager>().PowerUp = spawn;
-        hasFerramenta = true;
     }
-    /*public GameObject PowerUp = null;
+    //public GameObject PowerUp = null;
 
 
-    void OnCollisionEnter(Collision col)
+    //void OnCollisionEnter(Collision col)
+    //{
+    //    if (col.gameObject.tag == "Player" && ferramenta!=null)
+    //    {
+    //        gameObject.GetComponent<RepairCar>().hasFerramenta = true;
+    //        destroy();
+    //    }
+    //}
+
+    void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" && ferramenta != null)
         {
-            col.gameObject.GetComponent<PlayerMovement>().powerUp(PowerUp);
-            Destroy(PowerUp);
-            PowerUp = null;
+            if (col.gameObject.GetComponent<RepairCar>().hasFerramenta == false)
+            {
+                col.gameObject.GetComponent<RepairCar>().hasFerramenta = true;
+                destroy();
+            }
         }
-    }*/
+    }
 }
 
