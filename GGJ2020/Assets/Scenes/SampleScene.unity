@@ -166,7 +166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
-  car: {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
+  Cars:
+  - {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
+  - {fileID: 140570, guid: 9f14ffa559e6d214db9b0ec960921311, type: 3}
   spawnPoints:
   - {fileID: 4800416}
 --- !u!1 &30273013
@@ -213,7 +215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
-  car: {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
+  Cars:
+  - {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
+  - {fileID: 160038, guid: 6346f9198ebfb674baa1a61f29dc6060, type: 3}
   spawnPoints:
   - {fileID: 30273014}
 --- !u!1 &55039586
@@ -981,7 +985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
-  car: {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
+  Cars:
+  - {fileID: 193646, guid: c69b567067453614686658c6390e4d95, type: 3}
+  - {fileID: 160038, guid: f7cb15c5a7c4bdd498370bd90d1d77bd, type: 3}
   spawnPoints:
   - {fileID: 301567017}
 --- !u!1 &307436891
@@ -10859,7 +10865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 6
-  car: {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
+  Cars:
+  - {fileID: 129146, guid: 8f0fb4627eb4aed4f9ac1c0ec62fb2ff, type: 3}
+  - {fileID: 140570, guid: 9f14ffa559e6d214db9b0ec960921311, type: 3}
   spawnPoints:
   - {fileID: 1097799618}
 --- !u!1 &1114927087
@@ -14396,7 +14404,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 5
-  car: {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
+  Cars:
+  - {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
+  - {fileID: 186458, guid: 2ea69a4739a41bc4086858745cb2f9e1, type: 3}
+  - {fileID: 129146, guid: 0ef070b9729d6c640b16bfa755c95ec4, type: 3}
   spawnPoints:
   - {fileID: 1616321734}
 --- !u!43 &1623168426
@@ -14606,7 +14617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 5
-  car: {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
+  Cars:
+  - {fileID: 154144, guid: d5f4cc9cf65b2b8499d4720a3d9d8046, type: 3}
+  - {fileID: 186458, guid: 2ea69a4739a41bc4086858745cb2f9e1, type: 3}
+  - {fileID: 129146, guid: 0ef070b9729d6c640b16bfa755c95ec4, type: 3}
   spawnPoints:
   - {fileID: 1699810609}
 --- !u!1 &1723895648

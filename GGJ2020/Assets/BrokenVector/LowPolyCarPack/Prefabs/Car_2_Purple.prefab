@@ -173,9 +173,12 @@ GameObject:
   - component: {fileID: 475332}
   - component: {fileID: 3324316}
   - component: {fileID: 2315196}
+  - component: {fileID: 4994499304483741403}
+  - component: {fileID: 2372900085267129316}
+  - component: {fileID: 1496980545502587716}
   m_Layer: 0
   m_Name: Car_2_Purple
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 160038}
   m_LocalRotation: {x: 0.000000021855698, y: -0.00000003774895, z: 8.250296e-16, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 58, y: 58, z: 58}
   m_Children:
   - {fileID: 409372}
   - {fileID: 412698}
@@ -247,6 +250,49 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4994499304483741403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7028e89ce28250f4f82a684c8342f229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1496980545502587716}
+  speed: 3
+--- !u!65 &2372900085267129316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045769658, y: 0.013264355, z: 0.01639561}
+  m_Center: {x: -0.00032392264, y: 0.0008325869, z: 0.0002903068}
+--- !u!54 &1496980545502587716
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160038}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &181436
 GameObject:
   m_ObjectHideFlags: 0
