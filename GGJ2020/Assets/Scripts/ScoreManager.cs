@@ -1,10 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     private static float totalLifes = 3;
+    public static double score = 0;
+
+    void Start()
+    {
+        totalLifes = 3;
+        score = 0;
+    }
 
     public static void LostLife()
     {
@@ -23,6 +31,8 @@ public class ScoreManager : MonoBehaviour
             {
                 if (t.gameObject.name == "GameOver")
                 {
+                    var a = t.Find("ScoreDisplay").GetComponent<Text>();
+                    a.text = "" + score;
                     t.gameObject.SetActive(true);
                 }
             }
