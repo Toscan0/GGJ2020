@@ -17439,7 +17439,7 @@ MonoBehaviour:
   playerId: 2
   animator: {fileID: 0}
   rotation_speed: 0.5
-  mat: {fileID: 0}
+  mat: {fileID: 2100000, guid: 27b0ab2aad200a44ab3f708d6d20a834, type: 2}
 --- !u!65 &1767631596
 BoxCollider:
   m_ObjectHideFlags: 0
