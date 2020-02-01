@@ -16,7 +16,7 @@ public class CarGarageSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnCars", 0, 5);
+        InvokeRepeating("SpawnCars", 0, 3);
         barracas = GameObject.FindGameObjectsWithTag("Barraca");
     }
 

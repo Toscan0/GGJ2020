@@ -568,7 +568,11 @@ MonoBehaviour:
   - {fileID: 931122776}
   - {fileID: 1365033025}
   - {fileID: 1884208121}
+  barracas: []
   car: {fileID: 116448, guid: 039320a8f4b60c445acfae631ac0214f, type: 3}
+  specialCar: {fileID: 193646, guid: 19c00265a4f7b43489bdceefa77c2092, type: 3}
+  ferramenta: {fileID: 5235792965192958040, guid: d51581cfe16991f4d84580834ab65d47,
+    type: 3}
 --- !u!4 &118522395
 Transform:
   m_ObjectHideFlags: 0
@@ -729,7 +733,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh155012
+  m_Name: pb_Mesh52214
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1635,7 +1639,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154862
+  m_Name: pb_Mesh52064
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4606,8 +4610,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 1855691933}
   pbc: {fileID: 836253676}
+  barraca: {fileID: 0}
 --- !u!33 &362260251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5231,6 +5237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFerramenta: 0
+  ferramenta: {fileID: 0}
 --- !u!1 &471360849
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,7 +5303,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154630
+  m_Name: pb_Mesh51826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8214,8 +8222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 885904236}
   pbc: {fileID: 1679954540}
+  barraca: {fileID: 0}
 --- !u!33 &567804899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8535,7 +8545,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154706
+  m_Name: pb_Mesh51908
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11963,8 +11973,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 1284013014}
   pbc: {fileID: 1634526047}
+  barraca: {fileID: 0}
 --- !u!33 &931122781
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12251,6 +12263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFerramenta: 0
+  ferramenta: {fileID: 0}
 --- !u!1 &1046828954
 GameObject:
   m_ObjectHideFlags: 0
@@ -12539,7 +12553,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh154538
+  m_Name: pb_Mesh51734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13208,6 +13222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFerramenta: 0
+  ferramenta: {fileID: 0}
 --- !u!1 &1324519031
 GameObject:
   m_ObjectHideFlags: 0
@@ -13314,6 +13330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec203f241b9eee44aa70279c7ce425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFerramenta: 0
+  ferramenta: {fileID: 0}
 --- !u!1 &1339883711
 GameObject:
   m_ObjectHideFlags: 0
@@ -16283,8 +16301,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 1943411974}
   pbc: {fileID: 1604447284}
+  barraca: {fileID: 0}
 --- !u!33 &1365033030
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20702,8 +20722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 727581379}
   pbc: {fileID: 1821730232}
+  barraca: {fileID: 0}
 --- !u!33 &1884208126
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20731,7 +20753,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh155028
+  m_Name: pb_Mesh52230
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23650,8 +23672,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasCar: 0
   car: {fileID: 0}
+  specialCar: {fileID: 0}
   canva: {fileID: 433340494}
   pbc: {fileID: 223802215}
+  barraca: {fileID: 0}
 --- !u!33 &1894906318
 MeshFilter:
   m_ObjectHideFlags: 0
