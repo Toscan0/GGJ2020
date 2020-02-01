@@ -19,7 +19,7 @@ public class PowerUpSpawn : MonoBehaviour
     }
 
     void SpawnPowerUps() {
-        GameObject spawnPoint = spawnPoints[Random.Range(0, 4)];
+        GameObject spawnPoint = spawnPoints[Random.Range(0, 5)];
         if (spawnPoint.GetComponent<SpawnPointManager>().PowerUp == null) {
             GameObject powerUp = powerUps[Random.Range(0, 2)];
             GameObject spawn = Instantiate(powerUp);
