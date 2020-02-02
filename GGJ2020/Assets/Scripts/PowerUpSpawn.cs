@@ -15,6 +15,7 @@ public class PowerUpSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Random.InitState(42);
         InvokeRepeating("SpawnPowerUps", 5, Random.Range(5, 15));
     }
 
