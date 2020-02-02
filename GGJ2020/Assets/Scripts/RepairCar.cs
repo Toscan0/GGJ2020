@@ -34,7 +34,7 @@ public class RepairCar : MonoBehaviour
                         return;
                     }
                     box = collision.gameObject;
-                    this.transform.GetComponent<PlayerMovement>().speedModifier = 0;
+                    this.transform.GetComponent<PlayerMovement>().halt = true;
                     pbc = box.GetComponentInChildren<Canvas>().GetComponentInChildren<ProgressBarCircle>();
                     pbc.BarValue = 1;
                     tmp = box.GetComponent<Renderer>().material.color;
@@ -110,7 +110,7 @@ public class RepairCar : MonoBehaviour
 
                 if (collision.gameObject.GetComponent<GaragemManager>().hasCar)
                 {
-                    this.transform.GetComponent<PlayerMovement>().speedModifier = 0;
+                    this.transform.GetComponent<PlayerMovement>().halt = true;
                 }
                 /*else
                 {
@@ -127,11 +127,25 @@ public class RepairCar : MonoBehaviour
                         box.GetComponent<Renderer>().material.color = tmp;
                         sRepair = false;
                         box.GetComponentInChildren<Canvas>().enabled = false;
+
+                        switch(car.tag)
+                        {
+                            case "SpecialCar":
+                                ScoreManager.score += 200;
+                                break;
+                            case "DadCar":
+                            case "SonCar":
+                                ScoreManager.score += 150;
+                                break;
+                            default:
+                                ScoreManager.score += 100;
+                                break;
+                        }
+
                         Destroy(collision.gameObject.GetComponent<GaragemManager>().car);
                         collision.gameObject.GetComponent<GaragemManager>().hasCar = false;
-                        this.transform.GetComponent<PlayerMovement>().speedModifier = 1;
+                        this.transform.GetComponent<PlayerMovement>().halt = false;
 
-                        ScoreManager.score += 100;
                         AudioManager.PlaySound("Cash", Camera.main.transform.position);
                         if (hasFerramenta)
                             hasFerramenta = false;
@@ -150,7 +164,7 @@ public class RepairCar : MonoBehaviour
     private void OnTriggerExit(Collider collision)
     {
         if(!sRepair)
-            this.transform.GetComponent<PlayerMovement>().speedModifier = 1;
+            this.transform.GetComponent<PlayerMovement>().halt = false;
     }
 
 }
