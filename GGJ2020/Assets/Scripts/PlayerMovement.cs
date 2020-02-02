@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotation_speed = 1.5f;
 
     private bool invincibility = false;
-    public int speedModifier = 1;
+    public float speedModifier = 1f;
     public bool halt = false;
     private bool showHelmet = false;
 
@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
                 };
                 break;
             case "Speed":
-                speedModifier = 2;
+                speedModifier = 1.5f; //2
                 timer = (o, args) => {
                     speedModifier = 1;
                 };
