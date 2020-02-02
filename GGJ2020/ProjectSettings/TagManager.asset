@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barraca
   - Car
+  - Garagem
   layers:
   - Default
   - TransparentFX
