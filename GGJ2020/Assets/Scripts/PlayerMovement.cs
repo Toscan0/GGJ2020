@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
         ShieldPrefab.SetActive(showHelmet);
         SpeedPrefab.SetActive(speedModifier > 1);
 
+        halt = true;
+
     }
 
     public void OnCollisionEnter(Collision collision)
