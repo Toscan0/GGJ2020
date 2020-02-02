@@ -78,6 +78,9 @@ public class PlayerMovement : MonoBehaviour
                     AudioManager.PlaySound("Hit" + (playerId > 1 ? "" + playerId : ""), transform.position);
                 }
                 break;
+            case "Garagem":
+                animator.SetBool("Running", false);
+                break;
             default:
                 break;
         }
