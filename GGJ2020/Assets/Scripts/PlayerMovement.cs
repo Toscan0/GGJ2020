@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool shield = false;
     public int speedModifier = 1;
+    public bool halt = false;
     private bool shieldshield = false;
 
     public AudioSource sfx;
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!animator.GetBool("Fighting"))
+        if (!animator.GetBool("Fighting") && !halt)
         {
             var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 12, 0,
                   Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 20);
