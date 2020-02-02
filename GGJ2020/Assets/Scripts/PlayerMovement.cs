@@ -93,33 +93,42 @@ public class PlayerMovement : MonoBehaviour
     public void powerUp(GameObject powerUp) {
         
         // Create a timer with a two second interval.
-        System.Timers.Timer aTimer = new System.Timers.Timer(10000);
+        //System.Timers.Timer aTimer = new System.Timers.Timer(10000);
         // Hook up the Elapsed event for the timer.
-        aTimer.AutoReset = true;
-        ElapsedEventHandler timer;
+        //aTimer.AutoReset = true;
+        //ElapsedEventHandler timer;
         switch (powerUp.name)
         {
             case "Shield":
                 invincibility = true;
                 showHelmet = true;
-                timer = (o, args) => {
+                Invoke("ResetNoBoost", 10.0f);
+                /*timer = (o, args) => {
                     invincibility = false;
                     showHelmet = false;
-                };
+                };*/
                 break;
             case "Speed":
                 speedModifier = 1.5f; //2
-                timer = (o, args) => {
+                Invoke("ResetNoBoost", 10.0f);
+                /*timer = (o, args) => {
                     speedModifier = 1;
-                };
+                };*/
                 break;
             default:
                 Debug.Log("Unknown Powerup");
                 return;
         }
-        aTimer.Elapsed += timer;
-        aTimer.Enabled = true;
+        //aTimer.Elapsed += timer;
+        //aTimer.Enabled = true;
         AudioManager.PlaySound(powerUp.name + "Power", transform.position);
+
+    }
+
+    public void ResetNoBoost() {
+        invincibility = false;
+        showHelmet = false;
+        speedModifier = 1;
 
     }
 
