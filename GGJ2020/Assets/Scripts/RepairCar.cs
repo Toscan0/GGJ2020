@@ -100,10 +100,11 @@ public class RepairCar : MonoBehaviour
             case "Garagem":
 
                 PlayerMovement movement = this.transform.GetComponent<PlayerMovement>();
+                car = collision.gameObject.GetComponent<GaragemManager>().car;
 
-                if ((car.CompareTag("SpecialCar") && !hasFerramenta) ||
+                if (collision.gameObject.GetComponent<GaragemManager>().hasCar && ((car.CompareTag("SpecialCar") && !hasFerramenta) ||
                    (car.CompareTag("DadCar") && movement.playerId != 1) ||
-                   (car.CompareTag("SonCar") && movement.playerId != 2))
+                   (car.CompareTag("SonCar") && movement.playerId != 2)))
                 {
                     return;
                 }
