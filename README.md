@@ -9,10 +9,6 @@ Father and son cannot stand to be next to each other. Unfortunately, they have t
 
 ### Link:
 https://globalgamejam.org/2020/games/car-therapy-5
-### Installation Instructions:
-* Windows: 
-  * Open GGJ2020.exe
-  *  Have fun!
 
 ### Credits: 
 * Carolina Veloso
