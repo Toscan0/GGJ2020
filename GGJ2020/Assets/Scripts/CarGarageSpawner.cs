@@ -60,7 +60,7 @@ public class CarGarageSpawner : MonoBehaviour
                 sprite = toolSprite;
 
             }
-            else if (probability > 15 && probability < 26)
+            else if (probability > 15 && probability < 30)
             {
                 // Create Dad specific car
                 if (garage.name == "Cube" || garage.name == "Cube (1)" || garage.name == "Cube (2)")
@@ -79,7 +79,7 @@ public class CarGarageSpawner : MonoBehaviour
 
                 sprite = dadSprite;
             }
-            else if (probability > 25 && probability < 36)
+            else if (probability > 30 && probability < 45)
             {
                 // Create Son specific car
                 if (garage.name == "Cube" || garage.name == "Cube (1)" || garage.name == "Cube (2)")
