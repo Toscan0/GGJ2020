@@ -41,11 +41,11 @@ public class CarGarageSpawner : MonoBehaviour
                 }
 
                 var barraca = barracas[Random.Range(0, barracas.Length)];
-                while (barraca.gameObject.GetComponent<BarracaManager>().hasFerramenta)
+                while (barraca.gameObject.GetComponent<BarracaManager>().ferramenta != null)
                 {
                     barraca = barracas[Random.Range(0, barracas.Length)];
                 }
-                barraca.gameObject.GetComponent<BarracaManager>().ferramenta = Instantiate(ferramenta, barraca.transform.position + new Vector3(0,1,0), Quaternion.AngleAxis(-90, new Vector3(0, 1, 0)));
+                barraca.gameObject.GetComponent<BarracaManager>().ferramenta = Instantiate(ferramenta, barraca.transform.position + new Vector3(0,1.5f,0), Quaternion.AngleAxis(-90, new Vector3(0, 1, 0)));
                 garage.GetComponent<GaragemManager>().barraca = barraca;
 
             }

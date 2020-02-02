@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class RepairCar : MonoBehaviour
 {
     public bool hitBox = false;
     public bool hitCar = false;
+    public bool hitSpecialCar = false;
     public bool sRepair = false;
+    public bool hasFerramenta = false;
     GameObject box;
     GameObject car;
     public ProgressBarCircle pbc;
@@ -28,17 +31,22 @@ public class RepairCar : MonoBehaviour
                 hitCar = true;
                 car = collider.gameObject;
             }
-            if(hitBox && hitCar)
+
+            if (collider.CompareTag("SpecialCar"))
             {
-                pbc = box.GetComponentInChildren<Canvas>().GetComponentInChildren<ProgressBarCircle>();
+                hitSpecialCar = true;
+                car = collider.gameObject;
+            }
+            if((hitBox && hitCar) || (hitBox && hitSpecialCar && hasFerramenta))
+            {
+                var a = box.GetComponentInChildren<Canvas>();
+                pbc = a.GetComponentInChildren<ProgressBarCircle>();
                 pbc.BarValue = 0;
                 tmp = box.GetComponent<Renderer>().material.color;
                 tmp.a = 1.0f;
                 box.GetComponent<Renderer>().material.color = tmp;
                 sRepair = true;
                 break;
-                
-                
             }
         }
     }
@@ -57,6 +65,8 @@ public class RepairCar : MonoBehaviour
                 sRepair = false;
                 box.GetComponentInChildren<Canvas>().gameObject.SetActive(false);
                 Destroy(car);
+                if (hasFerramenta)
+                    hasFerramenta = false;
 
                 ScoreManager.score += 100;
                 AudioManager.PlaySound("Cash", Camera.main.transform.position);
