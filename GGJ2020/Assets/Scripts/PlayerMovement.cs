@@ -37,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!animator.GetBool("Fighting"))
         {
-            var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 45, 0,
-                  Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 50);
+            var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 12, 0,
+                  Input.GetAxis("Vertical" + (playerId > 1 ? "" + playerId : "")) / 20);
 
             transform.forward = movement.normalized;
             transform.Translate(movement * speedModifier,Space.World);
