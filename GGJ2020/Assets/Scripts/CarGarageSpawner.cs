@@ -25,6 +25,8 @@ public class CarGarageSpawner : MonoBehaviour
     {
         InvokeRepeating("SpawnCars", 1.5f, 3);
         barracas = GameObject.FindGameObjectsWithTag("Barraca");
+
+        Random.InitState(42);
     }
 
     void SpawnCars()
