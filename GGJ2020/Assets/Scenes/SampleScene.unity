@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44301015, g: 0.49220318, b: 0.5719317, a: 1}
+  m_IndirectSpecularColor: {r: 0.44301072, g: 0.49220413, b: 0.5719328, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1715,7 +1715,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh298724
+  m_Name: pb_Mesh99576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4733,7 +4733,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10.0003, y: 8.0001, z: 12}
   m_Center: {x: 0.0000014305115, y: 0.00000047683716, z: 0}
 --- !u!1 &372611861
 GameObject:
@@ -8319,7 +8319,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10.0003, y: 8.0001, z: 12}
   m_Center: {x: -0.0000023841858, y: 0.00000047683716, z: 0}
 --- !u!135 &567804901
 SphereCollider:
@@ -8632,7 +8632,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh298612
+  m_Name: pb_Mesh99098
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12173,7 +12173,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10, y: 10, z: 12}
   m_Center: {x: -0.0000023841858, y: 0.00000047683716, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -16115,7 +16115,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10.0003, y: 8.0001, z: 12}
   m_Center: {x: -0.0000023841858, y: 0.00000047683716, z: 0}
 --- !u!1 &1373607714
 GameObject:
@@ -21036,7 +21036,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10.0003, y: 8.0001, z: 12}
   m_Center: {x: 0.0000052452087, y: 0.00000047683716, z: 0}
 --- !u!43 &1884699808
 Mesh:
@@ -23987,7 +23987,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0003, y: 8.0001, z: 10}
+  m_Size: {x: 10.0003, y: 8.0001, z: 12}
   m_Center: {x: -0.0000023841858, y: 0.00000047683716, z: 0}
 --- !u!1 &1937827055 stripped
 GameObject:
