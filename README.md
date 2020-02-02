@@ -12,8 +12,8 @@ Father and son cannot stand to be next to each other. Unfortunately, they have t
   *  Have fun!
 
 ### Credits: 
-Carolina Veloso
-Denis Voicu
-Mariana Farias
-Miguel Cunha
-Tiago Toscano
+* Carolina Veloso
+* Denis Voicu
+* Mariana Farias
+* Miguel Cunha
+* Tiago Toscano
