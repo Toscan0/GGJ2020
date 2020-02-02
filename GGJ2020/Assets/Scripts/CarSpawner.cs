@@ -14,6 +14,11 @@ public class CarSpawner : MonoBehaviour
 
     float nextTimeToSpawn = 0f;
 
+    private void Start()
+    {
+        Random.InitState(42);
+    }
+
     void Update()
     {
         if (nextTimeToSpawn <= Time.time)
@@ -31,6 +36,7 @@ public class CarSpawner : MonoBehaviour
     void SpawnCar()
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
+
         Transform spawnPoint = spawnPoints[randomIndex];
 
         randomIndex = Random.Range(0, Cars.Length);
