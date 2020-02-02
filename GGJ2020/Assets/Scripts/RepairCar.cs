@@ -172,5 +172,10 @@ public class RepairCar : MonoBehaviour
     private void Update()
     {
         this.transform.Find("Ferramenta").gameObject.SetActive(hasFerramenta);
+
+        if (!sRepair)
+        {
+            this.transform.GetComponent<PlayerMovement>().halt = false;
+        }
     }
 }
