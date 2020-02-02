@@ -24,6 +24,15 @@ public class RepairCar : MonoBehaviour
             case "Garagem":
                 if (collision.gameObject.GetComponent<GaragemManager>().hasCar && !sRepair)
                 {
+                    car = collision.gameObject.GetComponent<GaragemManager>().car;
+                    PlayerMovement movement = this.transform.GetComponent<PlayerMovement>();
+
+                    if ((car.CompareTag("SpecialCar") && !hasFerramenta) || 
+                       (car.CompareTag("DadCar") && movement.playerId != 1) ||
+                       (car.CompareTag("SonCar") && movement.playerId != 2))
+                    {
+                        return;
+                    }
                     box = collision.gameObject;
                     this.transform.GetComponent<PlayerMovement>().speedModifier = 0;
                     pbc = box.GetComponentInChildren<Canvas>().GetComponentInChildren<ProgressBarCircle>();
@@ -89,6 +98,16 @@ public class RepairCar : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Garagem":
+
+                PlayerMovement movement = this.transform.GetComponent<PlayerMovement>();
+
+                if ((car.CompareTag("SpecialCar") && !hasFerramenta) ||
+                   (car.CompareTag("DadCar") && movement.playerId != 1) ||
+                   (car.CompareTag("SonCar") && movement.playerId != 2))
+                {
+                    return;
+                }
+
                 if (collision.gameObject.GetComponent<GaragemManager>().hasCar)
                 {
                     this.transform.GetComponent<PlayerMovement>().speedModifier = 0;

@@ -9,6 +9,9 @@ TagManager:
   - Garage
   - SpecialCar
   - Ferramenta
+  - Garagem
+  - DadCar
+  - SonCar
   layers:
   - Default
   - TransparentFX
