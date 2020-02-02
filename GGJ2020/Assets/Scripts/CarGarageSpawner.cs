@@ -69,6 +69,7 @@ public class CarGarageSpawner : MonoBehaviour
             garage.GetComponent<GaragemManager>().hasCar = true;
             garage.GetComponent<GaragemManager>().EnableIcon();
             garage.GetComponent<GaragemManager>().StartTimer();
+            AudioManager.PlaySound("Horn", Camera.main.transform.position);
         }
 
         

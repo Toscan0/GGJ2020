@@ -25,6 +25,7 @@ public class GaragemManager : MonoBehaviour
         {
             canva.gameObject.SetActive(false);
             Destroy(car);
+            //AudioManager.PlaySound("Greta", Camera.main.transform.position);
             hasCar = false;
             if (barraca != null)
             {

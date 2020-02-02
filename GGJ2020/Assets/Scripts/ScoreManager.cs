@@ -8,10 +8,17 @@ public class ScoreManager : MonoBehaviour
     private static float totalLifes = 3;
     public static double score = 0;
 
+    public Text scoreText;
+
     void Start()
     {
         totalLifes = 3;
         score = 0;
+    }
+
+    private void Update()
+    {
+        scoreText.text = "" + score;
     }
 
     public static void LostLife()

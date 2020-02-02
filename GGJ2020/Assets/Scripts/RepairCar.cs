@@ -57,6 +57,9 @@ public class RepairCar : MonoBehaviour
                 sRepair = false;
                 box.GetComponentInChildren<Canvas>().gameObject.SetActive(false);
                 Destroy(car);
+
+                ScoreManager.score += 100;
+                AudioManager.PlaySound("Cash", Camera.main.transform.position);
             }
         }
     }
