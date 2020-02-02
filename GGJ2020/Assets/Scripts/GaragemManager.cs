@@ -23,11 +23,11 @@ public class GaragemManager : MonoBehaviour
     private void Update()
     {
         this.pbc.BarValue = this.pbc.BarValue - Time.deltaTime * 5;
-        if(pbc.BarValue <= 0)
+        if(hasCar && pbc.BarValue <= 0)
         {
             canva.enabled = false;
             Destroy(car);
-            //AudioManager.PlaySound("Greta", Camera.main.transform.position);
+            AudioManager.PlaySound("Greta", Camera.main.transform.position);
             hasCar = false;
             if (barraca != null)
             {
