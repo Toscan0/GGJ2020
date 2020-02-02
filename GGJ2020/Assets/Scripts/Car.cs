@@ -23,7 +23,7 @@ public class Car : MonoBehaviour
 
         for (int i = 0; i < players.Length; i++)
         {
-            Physics.IgnoreCollision(players[i].GetComponent<BoxCollider>(),
+            Physics.IgnoreCollision(players[i].GetComponent<SphereCollider>(),
                 carCollider);
         }
     }

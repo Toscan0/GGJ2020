@@ -11,9 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float rotation_speed = 1.5f;
 
     private bool shield = false;
+    public int speedModifier = 1;
     private bool shieldshield = false;
-
-    private int speedModifier = 1;
 
     public AudioSource sfx;
 

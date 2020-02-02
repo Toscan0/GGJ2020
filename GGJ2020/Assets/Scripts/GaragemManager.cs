@@ -14,7 +14,7 @@ public class GaragemManager : MonoBehaviour
 
     private void Start()
     {
-        canva.gameObject.SetActive(false);
+        canva.enabled = false;
 
     }
 
@@ -23,7 +23,7 @@ public class GaragemManager : MonoBehaviour
         this.pbc.BarValue = this.pbc.BarValue - Time.deltaTime * 20;
         if(pbc.BarValue <= 0)
         {
-            canva.gameObject.SetActive(false);
+            canva.enabled = false;
             Destroy(car);
             //AudioManager.PlaySound("Greta", Camera.main.transform.position);
             hasCar = false;
@@ -37,7 +37,7 @@ public class GaragemManager : MonoBehaviour
 
     public void EnableIcon()
     {
-        canva.gameObject.SetActive(true);
+        canva.enabled = true;
     }
     public void StartTimer()
     {
