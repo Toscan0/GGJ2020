@@ -10,10 +10,10 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public float rotation_speed = 1.5f;
 
-    private bool shield = false;
+    private bool invincibility = false;
     public int speedModifier = 1;
     public bool halt = false;
-    private bool shieldshield = false;
+    private bool showHelmet = false;
 
     public AudioSource sfx;
 
@@ -47,23 +47,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if (shieldshield == true)
-        {
-            ShieldPrefab.SetActive(true);
-        }
-        else
-        {
-            ShieldPrefab.SetActive(false);
-        }
+        ShieldPrefab.SetActive(showHelmet);
+        SpeedPrefab.SetActive(speedModifier > 1);
 
-        if (speedModifier > 1)
-        {
-            SpeedPrefab.SetActive(true);
-        }
-        else
-        {
-            SpeedPrefab.SetActive(false);
-        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -87,7 +73,10 @@ public class PlayerMovement : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Car":
-                AudioManager.PlaySound("Hit" + (playerId > 1 ? "" + playerId : ""), transform.position);
+                if (!invincibility)
+                {
+                    AudioManager.PlaySound("Hit" + (playerId > 1 ? "" + playerId : ""), transform.position);
+                }
                 break;
             default:
                 break;
@@ -104,11 +93,11 @@ public class PlayerMovement : MonoBehaviour
         switch (powerUp.name)
         {
             case "Shield":
-                shield = true;
-                shieldshield = true;
+                invincibility = true;
+                showHelmet = true;
                 timer = (o, args) => {
-                    shield = false;
-                    shieldshield = false;
+                    invincibility = false;
+                    showHelmet = false;
                 };
                 break;
             case "Speed":
@@ -151,16 +140,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         mat.SetColor("_Color", new Color(mat.color.r, mat.color.g, mat.color.b, 255f));
-        shield = false;
+        invincibility = false;
     }
 
     public bool getShieldBool()
     {
-        return shield;
+        return invincibility;
     }
 
     public void setShieldBool(bool newBool)
     {
-        shield = newBool;
+        invincibility = newBool;
     }
 }
