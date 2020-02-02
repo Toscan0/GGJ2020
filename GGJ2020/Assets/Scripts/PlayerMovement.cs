@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         if (!animator.GetBool("Fighting") && !halt)
         {
             var movement = new Vector3(Input.GetAxis("Horizontal" + (playerId > 1 ? "" + playerId : "")) / 12, 0,
