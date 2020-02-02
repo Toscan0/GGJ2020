@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public Material mat;
 
     public GameObject ShieldPrefab;
+    public GameObject SpeedPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,15 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             ShieldPrefab.SetActive(false);
+        }
+
+        if (speedModifier > 1)
+        {
+            SpeedPrefab.SetActive(true);
+        }
+        else
+        {
+            SpeedPrefab.SetActive(false);
         }
     }
 
