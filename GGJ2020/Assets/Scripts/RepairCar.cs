@@ -117,7 +117,7 @@ public class RepairCar : MonoBehaviour
                 {
                     this.transform.GetComponent<PlayerMovement>().speedModifier = 1;
                 }*/
-                if (sRepair)
+                if (collision.gameObject.GetComponent<GaragemManager>().hasCar && sRepair)
                 {
                     this.transform.GetComponent<PlayerMovement>().halt = true;
                     pbc.BarValue = pbc.BarValue + Time.deltaTime * 50;
