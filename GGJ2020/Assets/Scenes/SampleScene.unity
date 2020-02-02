@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44301015, g: 0.49220318, b: 0.5719317, a: 1}
+  m_IndirectSpecularColor: {r: 0.44301072, g: 0.49220413, b: 0.5719328, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -670,6 +670,11 @@ MonoBehaviour:
   barracas: []
   car: {fileID: 116448, guid: 039320a8f4b60c445acfae631ac0214f, type: 3}
   specialCar: {fileID: 193646, guid: b8815a7c7fcd7a04f99714b71aeaa6f2, type: 3}
+  dadCar: {fileID: 162266, guid: 17683e3ffcde346458c0fa5f35c39b9c, type: 3}
+  sonCar: {fileID: 160038, guid: f7cb15c5a7c4bdd498370bd90d1d77bd, type: 3}
+  toolSprite: {fileID: 21300000, guid: 84c3dc85396fd2b429078e764af02144, type: 3}
+  dadSprite: {fileID: 21300000, guid: 2f44c860551fcf647b885380ad7f809f, type: 3}
+  sonSprite: {fileID: 21300000, guid: 3f69c3ba2e33f714b957b621e5b5cc46, type: 3}
   ferramenta: {fileID: 187384300925106500, guid: bcd1882f28a352b4aaf4cf8554079395,
     type: 3}
 --- !u!4 &118522395
@@ -839,7 +844,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75056
+  m_Name: pb_Mesh66604
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1710,7 +1715,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74876
+  m_Name: pb_Mesh66422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4701,6 +4706,7 @@ MonoBehaviour:
   canva: {fileID: 1855691933}
   pbc: {fileID: 836253676}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &362260251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5288,7 +5294,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74678
+  m_Name: pb_Mesh66224
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8212,6 +8218,7 @@ MonoBehaviour:
   canva: {fileID: 885904236}
   pbc: {fileID: 1679954540}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &567804899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8544,7 +8551,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74764
+  m_Name: pb_Mesh66310
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8735,7 +8742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: -340.3}
+  m_AnchoredPosition: {x: -13, y: -340.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767773591
@@ -12065,6 +12072,7 @@ MonoBehaviour:
   canva: {fileID: 1284013014}
   pbc: {fileID: 1634526047}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &931122781
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12206,7 +12214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: 353.2}
+  m_AnchoredPosition: {x: -15.3, y: 354.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995802503
@@ -12460,7 +12468,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74596
+  m_Name: pb_Mesh66142
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16006,6 +16014,7 @@ MonoBehaviour:
   canva: {fileID: 1943411974}
   pbc: {fileID: 1604447284}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &1365033030
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16228,7 +16237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303, y: 353.4}
+  m_AnchoredPosition: {x: -302.1, y: 354.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526899077
@@ -16918,7 +16927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: -340.2}
+  m_AnchoredPosition: {x: -303.1, y: -340.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1670704529
@@ -17142,7 +17151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: -341.3}
+  m_AnchoredPosition: {x: 274, y: -340.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721116336
@@ -17936,7 +17945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 272, y: 352.9}
+  m_AnchoredPosition: {x: 272.7, y: 354.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878480751
@@ -20741,6 +20750,7 @@ MonoBehaviour:
   canva: {fileID: 727581379}
   pbc: {fileID: 1821730232}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &1884208126
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20768,7 +20778,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75072
+  m_Name: pb_Mesh66620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23691,6 +23701,7 @@ MonoBehaviour:
   canva: {fileID: 433340494}
   pbc: {fileID: 223802215}
   barraca: {fileID: 0}
+  normalSprite: {fileID: 21300000, guid: 8282b29fe16525641aa45d339767969b, type: 3}
 --- !u!33 &1894906318
 MeshFilter:
   m_ObjectHideFlags: 0
